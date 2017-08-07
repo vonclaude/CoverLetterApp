@@ -1,0 +1,60 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>Cover Letter Template</title>
+	<meta name="description" content="Description">
+	<meta name="vonclaude" content="Author">
+
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+</head>
+
+<body ng-app="">
+	<div id="input">
+		<ul>
+			<li>Position: <input type="text" ng-model="position"></li>
+			<li>Source: <input type="text" ng-model="source"></li>
+			<li>Intro Paragraph: <input type="text" ng-model="intro"></li>
+			<li>Concluding Statement: <input type="text" ng-model="conclusion"></li>
+			<li>Qualification 1: <input type="text" ng-model="qual_1"></li>
+			<li>Qualification 2: <input type="text" ng-model="qual_2"></li>
+			<li>Qualification 3: <input type="text" ng-model="qual_3"></li>
+			<li>Qualification 4: <input type="text" ng-model="qual_4"></li>
+			<li>Applicant Name: <input type="text" ng-model="name"></li>
+			<li>Applicant Phone Number: <input type="text" ng-model="phone"></li>
+			<li>Applicant Email: <input type="email" ng-model="email"></li>
+		</ul>
+	</div>
+	
+	<hr />
+	
+	<div id="letter">
+		<p>To whom it may concern:</p>
+
+		<p>I saw your posting for a {{position}} on {{source}}, and I was very interested in applying! Having reviewed your requirements for the position, I am confident that I have the skills you need to be able to contribute.</p>
+
+		<p>{{intro}}</p>
+
+		<p>Of your requirements, I wanted to highlight a few which most closely match with my previous experience & skills in software development.</p>
+
+		<ul>
+			<li>- {{qual_1}}</li>
+			<li>- {{qual_2}}</li>
+			<li>- {{qual_3}}</li>
+			<li>- {{qual_4}}</li>
+		</ul>
+
+		<p>{{conclusion}} I would be a great help to you and your team, and hope you think so too! I look forward to hearing back from you. Please contact me anytime at the number or email address below.</p>
+
+		<ul>
+			<li>{{name}}</li>
+			<li>{{phone}}</li>
+			<li>{{email}}</li>
+		</ul>
+	</div>
+</body>
+
+</html>
