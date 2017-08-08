@@ -9,24 +9,79 @@
 	<meta name="vonclaude" content="Author">
 
 	<link rel="stylesheet" href="css/styles.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">	
 </head>
 
-<body ng-app="">
+<body ng-app="letter">
 	<div id="input">
-		<ul>
-			<li>Position: <input type="text" ng-model="position"></li>
-			<li>Source: <input type="text" ng-model="source"></li>
-			<li>Intro Paragraph: <input type="text" ng-model="intro"></li>
-			<li>Concluding Statement: <input type="text" ng-model="conclusion"></li>
-			<li>Qualification 1: <input type="text" ng-model="qual_1"></li>
-			<li>Qualification 2: <input type="text" ng-model="qual_2"></li>
-			<li>Qualification 3: <input type="text" ng-model="qual_3"></li>
-			<li>Qualification 4: <input type="text" ng-model="qual_4"></li>
-			<li>Applicant Name: <input type="text" ng-model="name"></li>
-			<li>Applicant Phone Number: <input type="text" ng-model="phone"></li>
-			<li>Applicant Email: <input type="email" ng-model="email"></li>
-		</ul>
+		<md-content>
+			<div layout="row">
+				<md-input-container>
+					<label>Name</label>
+					<input ng-model="name">
+				</md-input-container>
+				
+				<md-input-container>
+					<label>Phone Number</label>
+					<input ng-model="phone">
+				</md-input-container>
+				
+				<md-input-container>
+					<label>Email</label>
+					<input ng-model="email" type="email">
+				</md-input-container>
+			</div>
+			
+			<div layout="row">
+				<md-input-container>
+					<label>Position</label>
+					<input ng-model="position">
+				</md-input-container>
+				
+				<md-input-container>
+					<label>Source</label>
+					<input ng-model="source">
+				</md-input-container>
+			</div>
+
+			<div layout="row">
+				<md-input-container>
+					<label>Qualification 1</label>
+					<input ng-model="qual_1">
+				</md-input-container>
+				
+				<md-input-container>
+					<label>Qualification 2</label>
+					<input ng-model="qual_2">
+				</md-input-container>
+			</div>
+			
+			<div layout="row">
+				<md-input-container>
+					<label>Qualification 3</label>
+					<input ng-model="qual_3">
+				</md-input-container>
+				
+				<md-input-container>
+					<label>Qualification 4</label>
+					<input ng-model="qual_4">
+				</md-input-container>
+			</div>
+
+			<div layout="column" layout-md="column">
+				<md-input-container>
+					<label>Intro Paragraph</label>
+					<textarea ng-model="intro"></textarea>
+				</md-input-container>
+			</div>
+
+			<div layout="column">
+				<md-input-container>
+					<label>Conclusion</label>
+					<textarea ng-model="conclusion"></textarea>
+				</md-input-container>
+			</div>
+		</md-content>
 	</div>
 	
 	<hr />
@@ -55,6 +110,13 @@
 			<li>{{email}}</li>
 		</ul>
 	</div>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.4/angular-material.min.js"></script>
+	<script src="script/letter.module.js"></script>
+	
 </body>
 
 </html>
