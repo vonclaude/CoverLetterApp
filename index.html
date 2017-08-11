@@ -13,76 +13,80 @@
 </head>
 
 <body ng-app="letter">
-	<div id="input">
-		<md-content>
-			<div layout="row">
-				<md-input-container>
-					<label>Name</label>
-					<input ng-model="name">
-				</md-input-container>
+	<md-content>
+		<md-card>
+			<md-card-title>
+				<md-card-title-text>
+					<span class="md-headline">Applicant Information</span>
+					<span class="md-subhead">Enter your information and the posting information in the relevant fields.</span>
+				</md-card-title-text>
+			</md-card-title>
+			<md-card-content>
+				<div layout="row">
+					<md-input-container>
+						<label>Name</label>
+						<input ng-model="name">
+					</md-input-container>
+					
+					<md-input-container>
+						<label>Phone Number</label>
+						<input ng-model="phone" type="tel">
+					</md-input-container>
+					
+					<md-input-container>
+						<label>Email</label>
+						<input ng-model="email" type="email">
+					</md-input-container>
+				</div>
 				
-				<md-input-container>
-					<label>Phone Number</label>
-					<input ng-model="phone">
-				</md-input-container>
-				
-				<md-input-container>
-					<label>Email</label>
-					<input ng-model="email" type="email">
-				</md-input-container>
-			</div>
-			
-			<div layout="row">
-				<md-input-container>
-					<label>Position</label>
-					<input ng-model="position">
-				</md-input-container>
-				
-				<md-input-container>
-					<label>Source</label>
-					<input ng-model="source">
-				</md-input-container>
-			</div>
+				<div layout="row">
+					<md-input-container>
+						<label>Position</label>
+						<input ng-model="position">
+					</md-input-container>
+					
+					<md-input-container>
+						<label>Source</label>
+						<input ng-model="source">
+					</md-input-container>
+				</div>
 
-			<div layout="row">
-				<md-input-container>
-					<label>Qualification 1</label>
-					<input ng-model="qual_1">
-				</md-input-container>
+				<div layout="row">
+					<md-input-container flex>
+						<label>Qualification 1</label>
+						<textarea ng-model="qual_1"></textarea>
+					</md-input-container>
+					<md-input-container flex>
+						<label>Qualification 2</label>
+						<textarea ng-model="qual_2"></textarea>
+					</md-input-container>
+				</div>
 				
-				<md-input-container>
-					<label>Qualification 2</label>
-					<input ng-model="qual_2">
-				</md-input-container>
-			</div>
-			
-			<div layout="row">
-				<md-input-container>
-					<label>Qualification 3</label>
-					<input ng-model="qual_3">
-				</md-input-container>
+				<div layout="row">
+					<md-input-container flex>
+						<label>Qualification 3</label>
+						<textarea ng-model="qual_3"></textarea>
+					</md-input-container>
+					<md-input-container flex>
+						<label>Qualification 4</label>
+						<textarea ng-model="qual_4"></textarea>
+					</md-input-container>
+				</div>
+					
+				<div layout="column">
+					<md-input-container>
+						<label>Intro Paragraph</label>
+						<textarea ng-model="intro"></textarea>
+					</md-input-container>
 				
-				<md-input-container>
-					<label>Qualification 4</label>
-					<input ng-model="qual_4">
-				</md-input-container>
-			</div>
-
-			<div layout="column" layout-md="column">
-				<md-input-container>
-					<label>Intro Paragraph</label>
-					<textarea ng-model="intro"></textarea>
-				</md-input-container>
-			</div>
-
-			<div layout="column">
-				<md-input-container>
-					<label>Conclusion</label>
-					<textarea ng-model="conclusion"></textarea>
-				</md-input-container>
-			</div>
-		</md-content>
-	</div>
+					<md-input-container>
+						<label>Conclusion</label>
+						<textarea ng-model="conclusion"></textarea>
+					</md-input-container>
+				</div>
+			</md-card-content>
+		</md-card>
+	</md-content>
 	
 	<hr />
 	
